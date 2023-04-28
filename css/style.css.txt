@@ -1,0 +1,5 @@
+body{
+winth:100%;
+pading:o;
+margin:0;
+}

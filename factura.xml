@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="estilo.xsl"?>
+<factura numero="3457/2011" fecha="29/03/2011">
+  <emisor empresa="Electronica Milenio">
+	<direccion>
+	  <calle>Avda las Vidrieras</calle>
+	  <numero>5</numero>
+	  <cp>45280</cp>
+	  <localidad>Olias del Rey</localidad>
+	  <provincia>Toledo</provincia>
+	</direccion>
+	<nif>Q-56435454O</nif>
+  </emisor>
+  <receptor empresa="Imagen La Mancha">
+	<direccion>
+	  <calle>IV centenario</calle>
+	  <numero>56</numero>
+	  <cp>45003</cp>
+	  <localidad>Toledo</localidad>
+	  <provincia>Toledo</provincia>
+	</direccion>
+	<nif>K-22315547H</nif>
+  </receptor>
+  <concepto descripcion="Gafas Lectura">
+  	<cantidad>4</cantidad>
+	<preciouni>30</preciouni>
+	<iva>10</iva>
+	<importe>129.60</importe>
+  </concepto>
+  <concepto descripcion="Revista">
+  	<cantidad>10</cantidad>
+	<preciouni>6</preciouni>
+	<iva>4</iva>
+	<importe>62.40</importe>
+  </concepto>
+  <concepto descripcion="TV LG 22">
+  	<cantidad>3</cantidad>
+	<preciouni>250</preciouni>
+	<iva>21</iva>
+	<importe>885</importe>
+  </concepto>
+  <baseimponible>930</baseimponible>
+  <totaliva>147</totaliva>
+  <total>1077</total>
+</factura>
