@@ -1,5 +1,52 @@
 body{
 width: 100%;
+height: auto;
 padding :0;
 margin:0;
+}
+header h1{
+
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+/************MAIN ************/
+
+main{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    display: flex;
+}
+.container_factura{
+    width: 80%;
+    height: 90%;
+    background-color: rgb(114, 166, 211);
+    justify-content: center;
+    display: flex;
+}
+.id_factura{
+    width: 40%;
+    height: 25px;
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 5%;
+    text-align: center;
+}
+.id_factura span{
+    font-size: 1.5rem;
+
+    
+}
+.factura_titulo_Emisor{
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
 }
