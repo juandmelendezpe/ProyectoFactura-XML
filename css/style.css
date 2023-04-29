@@ -19,34 +19,88 @@ main{
     height: auto;
     margin: 0;
 }
+/************CONTAINER PRINCIPAL ************/
+
 .container{
     width: 100%;
-    height: 500px;
+    height: 600px;
     justify-content: center;
     display: flex;
 }
+/************CONTAINER  FACTURA ************/
+
+
 .container_factura{
     width: 80%;
     height: 90%;
     background-color: rgb(114, 166, 211);
-    justify-content: center;
-    display: flex;
+   
 }
+/************SECTION ID Y FECHA ************/
+
 .id_factura{
-    width: 40%;
+    width: 45%;
     height: 25px;
     background-color: blue;
     color: aliceblue;
     border-radius: 5%;
     text-align: center;
+    float: left;
+    margin: 10px;
 }
-.id_factura span{
+ span{
     font-size: 1.5rem;
+    width: 40%;
+    height: 25px;
 
-    
+}
+.id_fecha{
+    width: 45%;
+    height: 25px;
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 5%;
+    text-align: center;
+    float: right;
+    margin: 10px;
+
+
+}
+
+/************SECTION DATOS EMISOR ************/
+
+.datos_emisor{
+    width: 45%;
+    height: 35%;
+    border: 2px solid white;
+    float: left;
+    margin: 10px;
 }
 .factura_titulo_Emisor{
     width: 100%;
-    height: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 5px;
+
+
+}
+/************SECTION DATOS RECEPTOR ************/
+.datos_receptor{
+    width: 45%;
+    height: 35%;
     border: 2px solid white;
+    float: right;
+    margin: 10px;
+
+}
+.factura_titulo_receptor{
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 5px;
+
 }
