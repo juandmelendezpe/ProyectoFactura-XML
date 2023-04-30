@@ -84,7 +84,9 @@ main{
 }
 
 /************SECTION DATOS EMISOR ************/
-
+p{
+    margin-left: 10px;
+}
 .datos_emisor{
     width: 45%;
     height: 35%;
@@ -100,8 +102,8 @@ main{
     font-size: 1.5rem;
     margin: 10px;
 
-
 }
+
 /************SECTION DATOS RECEPTOR ************/
 .datos_receptor{
     width: 45%;

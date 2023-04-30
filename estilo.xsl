@@ -18,7 +18,7 @@
 			<head>
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<title>Escrutinio</title>
+				<title>Facturacion</title>
 				<link rel="stylesheet" href="css/style.css" type="text/css" />
 			</head>
 
@@ -37,17 +37,17 @@
 							
 							<div class="datos_emisor">
 								<div class="factura_titulo_Emisor">Emisor</div>
-								<p>a:<xsl:value-of select="factura/@empresa"/> </p>
-								<p>a:<xsl:value-of select="factura/emisor/direccion/calle"/>|<xsl:value-of select="direccion/numero"/>| <xsl:value-of select="direccion/cp	"/>|<xsl:value-of select="direccion/localidad"/>| <xsl:value-of select="direccion/provincia"/> </p>
-								<p>a:<xsl:value-of select="factura/emisor/nif"/> </p>
+								<p><xsl:value-of select="factura/emisor/@empresa"/> </p>
+								<p><xsl:value-of select="factura/emisor/direccion/calle"/>||<xsl:value-of select="factura/emisor/direccion/numero"/> <xsl:value-of select="factura/emisor/direccion/cp	"/><xsl:value-of select="factura/emisor/direccion/localidad"/> <xsl:value-of select="factura/emisor/direccion/provincia"/> </p>
+								<p><xsl:value-of select="factura/emisor/nif"/> </p>
 							</div>
 
 					
 							<div class="datos_receptor">
 								<div class="factura_titulo_receptor">Receptor</div>
-									<p>a:Electronica Milenio</p>
-									<p>a:Avda las vidrieras 5 45280 olias del Rey Toledo</p>
-									<p>a:Q-564354540</p>
+									<p><xsl:value-of select="factura/receptor/@empresa"/></p>
+									<p><xsl:value-of select="factura/receptor/direccion/calle"/><xsl:value-of select="factura/receptor/direccion/numero"/> <xsl:value-of select="factura/receptor/direccion/cp	"/><xsl:value-of select="factura/receptor/direccion/localidad"/> <xsl:value-of select="factura/receptor/direccion/provincia"/> </p>
+									<p><xsl:value-of select="factura/receptor/nif"/></p>
 								</div>
 
 						
@@ -62,15 +62,19 @@
 										  <th>IMPORTE </th>
 
 										</tr>
+										<xsl:for-each select="factura/concepto">
+
 										<tr>
-										  <td><img src="img/img/Gafas Lectura.png" alt="gafas" /> </td>
-										  <td>a </td>
-										  <td>a</td>
-										  <td>a</td>
-										  <td>a </td>
-										  <td>a </td>
+										  <td><img src="img/img/{@descripcion}.png" alt="gafas" /> </td>
+										  <td><xsl:value-of select="@descripcion"/> </td>
+										  <td><xsl:value-of select="cantidad"/></td>
+										  <td><xsl:value-of select="preciouni"/></td>
+										  <td><xsl:value-of select="iva"/> </td>
+										  <td><xsl:value-of select="importe"/> </td>
 
 										  </tr>
+
+										</xsl:for-each>
 									  </table>
 							</div>
 						</div>
